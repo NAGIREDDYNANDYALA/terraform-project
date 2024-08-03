@@ -12,8 +12,8 @@ module "prod-instances" {
 
   ENVIRONMENT    = var.Env
   AWS_REGION     = var.AWS_REGION
-  VPC_ID         = module.dev-vpc.my_vpc_id
-  PUBLIC_SUBNETS = module.dev-vpc.public_subnets
+  VPC_ID  = module.prod-vpc.my_vpc_id
+  PUBLIC_SUBNETS = module.prod-vpc.public_subnets
 }
 
 provider "aws" {
